@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="refresh" content="600">
+    <meta name="keyword" content="JavaScript, Practice">
+    <meta name="description" content="This is an template for JavaScript Practise">
+    <meta name="author" content="arunpandian">
+
+    <title>JavaScript Practise</title>
+
+    <script type="text/javascript">
+    <!--function name and ID name should not be same
+    function can begin with small letter-->
+    function ReplaceText(){
+      <!--We are getting the value from the user using the ID  -->
+      var UserText = document.getElementById('ReplaceText1').value;
+      if (UserText.length == 0) {
+        alert('Please Enter the text ;( ');
+        return;
+      }
+
+      <!--We are just creating an reference of that particular Element Tag -->
+      var MyHeading = document.getElementById('MyHeading');
+      MyHeading.innerHTML = UserText;
+    }
+    </script>
+
+
+  </head>
+
+  <body>
+    <header>
+      <hgroup>
+        <h1 id="MyHeading">JavaScript practise template</h1>
+      </hgroup>
+    </header>
+
+    <section>
+      <form>
+        <fieldset>
+          <legend>Replace Heading Using JavaScript</legend>
+          <label for="ReplaceText1">Replace Text : </label>
+          <input type="text" id="ReplaceText1" name="ReplaceText1" placeholder="Enter a Replace Text" />
+          <input type="button" value="Click Me" onclick="ReplaceText()"/>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <small>Copyright © 2016 www.arunpandianm.com</small>
+    </footer>
+  </body>
+</html>
