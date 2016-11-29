@@ -15,14 +15,14 @@
     <!--function name and ID name should not be same
     function can begin with small letter-->
     function ReplaceText(){
-      <!--We are getting the value from the user using the ID  -->
+      //We are getting the value from the user using the ID
       var UserText = document.getElementById('ReplaceText1').value;
       if (UserText.length == 0) {
         alert('Please Enter the text ;( ');
         return;
       }
 
-      <!--We are just creating an reference of that particular Element Tag -->
+      //We are just creating an reference of that particular Element Tag
       var MyHeading = document.getElementById('MyHeading');
       MyHeading.innerHTML = UserText;
     }
