@@ -1,7 +1,7 @@
 //name of the object is myObjectLiteral
 // {} denotes the structure
 myObjectLiteral = {
-  //Both name and myDate are said to be member of the object myObjectLiteral
+  //Both name and myMsg are said to be member of the object myObjectLiteral
   //Each members are separated by Comma
   name : "arunpandian",//This is property
   myMsg : function(){//This an ANANOMOUS function
